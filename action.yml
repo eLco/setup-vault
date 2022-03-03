@@ -1,0 +1,17 @@
+name: 'Setup Vault CLI'
+description: Setup HashiCorp Vault CLI on GitHub Actions runners
+inputs:
+  vault_version:
+    description: Version of Vault CLI to install
+    required: false
+    default: latest
+  github_token:
+    description: GitHub token - used when for getting the release information from Github API
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: node16
+  main: dist/index.js
+branding:
+  icon: 'terminal'
+  color: 'green'

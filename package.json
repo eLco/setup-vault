@@ -1,0 +1,30 @@
+{
+  "name": "setup-vault",
+  "version": "1.0.0",
+  "description": "Setup Vault CLI for GitHub Actions",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "test": "jest",
+    "all": "npm run lint && npm run prepare && npm run test"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/eLco/setup-vault",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eLco/setup-vault.git"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/tool-cache": "^1.6.1",
+    "@hashicorp/js-releases": "^1.5.0",
+    "@octokit/rest": "^18.12.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.0",
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0"
+  }
+}
