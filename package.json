@@ -1,6 +1,6 @@
 {
   "name": "setup-vault",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "Setup Vault CLI for GitHub Actions",
   "main": "index.js",
   "scripts": {
