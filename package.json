@@ -20,7 +20,7 @@
     "@actions/core": "^1.9.0",
     "@actions/tool-cache": "^2.0.1",
     "@hashicorp/js-releases": "^1.6.0",
-    "@octokit/rest": "^19.0.3"
+    "@octokit/rest": "^21.1.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0",
